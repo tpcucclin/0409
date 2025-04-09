@@ -1,0 +1,66 @@
+{
+    "_id": "2330v2",
+    "startUrl": [
+        "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20250301&stockNo=2330&response=html"
+    ],
+    "selectors": [
+        {
+            "id": "date",
+            "parentSelectors": [
+                "_root"
+            ],
+            "type": "SelectorTable",
+            "multiple": true,
+            "selector": "table",
+            "tableDataRowSelector": "tbody tr",
+            "tableHeaderRowSelector": "thead tr:nth-of-type(2)",
+            "columns": [
+                {
+                    "extract": true,
+                    "header": "日期",
+                    "name": "date"
+                },
+                {
+                    "extract": true,
+                    "header": "成交股數",
+                    "name": "成交股數"
+                },
+                {
+                    "extract": true,
+                    "header": "成交金額",
+                    "name": "成交金額"
+                },
+                {
+                    "extract": true,
+                    "header": "開盤價",
+                    "name": "開盤價"
+                },
+                {
+                    "extract": true,
+                    "header": "最高價",
+                    "name": "最高價"
+                },
+                {
+                    "extract": true,
+                    "header": "最低價",
+                    "name": "最低價"
+                },
+                {
+                    "extract": true,
+                    "header": "收盤價",
+                    "name": "收盤價"
+                },
+                {
+                    "extract": true,
+                    "header": "漲跌價差",
+                    "name": "漲跌價差"
+                },
+                {
+                    "extract": true,
+                    "header": "成交筆數",
+                    "name": "成交筆數"
+                }
+            ]
+        }
+    ]
+}
