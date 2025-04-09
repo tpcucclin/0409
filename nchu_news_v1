@@ -1,0 +1,49 @@
+{
+    "_id": "NCHU",
+    "startUrl": [
+        "https://www2.nchu.edu.tw/news/page/0"
+    ],
+    "selectors": [
+        {
+            "elementLimit": 0,
+            "id": "wrapper_for_title_data",
+            "multiple": true,
+            "parentSelectors": [
+                "_root"
+            ],
+            "scroll": false,
+            "selector": ".item-group li",
+            "type": "SelectorElement"
+        },
+        {
+            "id": "date",
+            "multiple": false,
+            "parentSelectors": [
+                "wrapper_for_title_data"
+            ],
+            "regex": "",
+            "selector": "span.date",
+            "type": "SelectorText"
+        },
+        {
+            "id": "title",
+            "multiple": false,
+            "parentSelectors": [
+                "wrapper_for_title_data"
+            ],
+            "regex": "",
+            "selector": "h2",
+            "type": "SelectorText"
+        },
+        {
+            "id": "url",
+            "linkType": "linkFromHref",
+            "multiple": false,
+            "parentSelectors": [
+                "wrapper_for_title_data"
+            ],
+            "selector": "a",
+            "type": "SelectorLink"
+        }
+    ]
+}
